@@ -1,0 +1,71 @@
+.scream {
+    height: 614.4px;
+    display: block;
+    border: 1px solid;
+}
+
+.deco_btn1 {
+    display: block;
+    left: 316.4px;
+    position: absolute;
+    top: 244.4px;
+}
+
+.deco_btn2 {
+    display: block;
+    left: 316.4px;
+    position: absolute;
+    top: 316.4px;
+}
+
+.deco_btn3 {
+    display: block;
+    left: 316.4px;
+    position: absolute;
+    top: 388.6px;
+}
+
+.btn_span {
+    position: absolute;
+    top: 5px;
+    left: 47px;
+}
+
+.deco_btnall {
+    background-color: white;
+    border: none;
+    color: red;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Lucida Handwriting", cursive;
+    cursor: pointer;
+    position: absolute;
+    left: 689.6px;
+    top: 24.8px;
+    width: 108px;
+    height: 36px;
+    border-radius: 18px;
+    text-align: center;
+    display: block;
+    border-width: 1px;
+    border-color: rgb(107, 106, 106);
+    border-style: solid;
+}
+
+.deco_btnall:hover {
+    background-color: lightslategray;
+}
+
+.btn_img {
+    position: absolute;
+    left: 15.6px;
+    top: 5.8px;
+    width: 25px;
+}
+
+.myCanvas {
+    left: 160px;
+    position: absolute;
+    top: 10px;
+}

@@ -1,0 +1,68 @@
+.bg_img3 {
+    height: 594.4px;
+    display: block;
+    border: 1px solid;
+}
+
+.myCanvas3 {
+    left: 160px;
+    position: absolute;
+    top: 10px;
+}
+
+.deco_header {
+    position: absolute;
+    left: 274.8px;
+    top: 70.8px;
+    font-size: 60px;
+    font-family: STLiti;
+    letter-spacing: 10px;
+    color: red;
+}
+
+.rule_pic {
+    position: absolute;
+    top: -14px;
+    left: 0px;
+    width: 608px;
+    transform: scale(0.55);
+}
+
+.deco_btnall {
+    background-color: white;
+    border: none;
+    color: red;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Lucida Handwriting", cursive;
+    cursor: pointer;
+    position: absolute;
+    left: 689.6px;
+    top: 24.8px;
+    width: 108px;
+    height: 36px;
+    border-radius: 18px;
+    text-align: center;
+    display: block;
+    border-width: 1px;
+    border-color: rgb(107, 106, 106);
+    border-style: solid;
+}
+
+.deco_btnall:hover {
+    background-color: lightslategray;
+}
+
+.btn_img {
+    position: absolute;
+    left: 15.6px;
+    top: 5.8px;
+    width: 25px;
+}
+
+.btn_span {
+    position: absolute;
+    top: 5px;
+    left: 47px;
+}
