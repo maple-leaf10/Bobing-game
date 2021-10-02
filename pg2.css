@@ -1,0 +1,39 @@
+.scream {
+    height: 614.4px;
+    display: block;
+    border: 1px solid;
+}
+
+.deco_btn1 {
+    display: block;
+    left: 316.4px;
+    position: absolute;
+    top: 244.4px;
+}
+
+.deco_btn2 {
+    display: block;
+    left: 316.4px;
+    position: absolute;
+    top: 316.4px;
+}
+
+.deco_btn3 {
+    display: block;
+    left: 316.4px;
+    position: absolute;
+    top: 388.6px;
+}
+
+.deco_btntop {
+    display: block;
+    left: 689.6px;
+    position: absolute;
+    top: 24.8px;
+}
+
+.myCanvas {
+    left: 160px;
+    position: absolute;
+    top: 10px;
+}

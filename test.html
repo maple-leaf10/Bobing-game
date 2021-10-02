@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="pg1.css" rel="stylesheet" type="text/css" />
+    <!-- cdn引入ElementUI样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <title>little-game</title>
+    <style>
+        .el-col {
+            border-radius: 4px;
+        }
+        
+        .bg-purple-dark {
+            background: #99a9bf;
+        }
+        
+        .bg-purple {
+            background: #d3dce6;
+        }
+        
+        .bg-purple-light {
+            background: #e5e9f2;
+        }
+        
+        .grid-content {
+            border-radius: 4px;
+            min-height: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-row :gutter="10">
+            <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+                <div class="grid-content bg-purple"></div>
+            </el-col>
+            <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11">
+                <div class="grid-content bg-purple-light"></div>
+            </el-col>
+            <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11">
+                <div class="grid-content bg-purple"></div>
+            </el-col>
+            <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+                <div class="grid-content bg-purple-light"></div>
+            </el-col>
+        </el-row>
+    </div>
+</body>
+
+<!--cdn引入ElementUI组件必须先引入Vue-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- cdn引入ElementUI组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script type="text/javascript">
+    const vm = new Vue({ // 配置对象 options
+        // 配置选项(option)
+        el: '#app', // element: 指定用vue来管理页面中的哪个标签区域
+        data: {
+            msg: ''
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,56 @@
+.scream {
+    height: 614.4px;
+    display: block;
+    border: 1px solid;
+}
+
+.deco_pic {
+    display: block;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+}
+
+.deco_pic1 {
+    display: block;
+    left: 435px;
+    position: absolute;
+    top: 249.5px;
+}
+
+.deco_pic2 {
+    display: block;
+    left: 288.4px;
+    position: absolute;
+    top: 355.6px;
+}
+
+.deco_btn1 {
+    display: block;
+    left: 584.4px;
+    position: absolute;
+    top: 359.2px;
+    width: 150px;
+}
+
+.deco_btn2 {
+    display: block;
+    left: 584.4px;
+    position: absolute;
+    top: 431.6px;
+    width: 150px;
+}
+
+.deco_btn3 {
+    display: block;
+    left: 584.4px;
+    position: absolute;
+    top: 503.6px;
+    width: 150px;
+}
+
+.myCanvas {
+    left: 160px;
+    position: absolute;
+    top: 10px;
+}
