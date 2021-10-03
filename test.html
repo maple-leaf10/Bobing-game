@@ -10,46 +10,58 @@
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <title>little-game</title>
     <style>
-        .el-col {
-            border-radius: 4px;
+        .main_btn {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            color: white;
+            background: rgb(99, 184, 241);
+            border-radius: 50px;
+            border: 1.5px solid;
+            border-color: rgb(187, 100, 238);
+            height: 46.2px;
+            width: 186.8px;
+            font-size: 15px;
+            background-size: 400%;
         }
         
-        .bg-purple-dark {
-            background: #99a9bf;
+        .main_btn:hover {
+            background: linear-gradient(90deg, rgb(99, 184, 241), pink, rgb(228, 107, 228), rgb(99, 184, 241));
+            background-size: 400%;
         }
         
-        .bg-purple {
-            background: #d3dce6;
+        .main_btn::before {
+            content: "";
+            position: absolute;
+            left: -2px;
+            right: -2px;
+            top: -2px;
+            bottom: -2px;
+            background: linear-gradient(90deg, white, gray, rgb(63, 52, 52));
+            background-size: 400%;
+            border-radius: 20px;
+            filter: blur(5px);
+            z-index: -1;
         }
         
-        .bg-purple-light {
-            background: #e5e9f2;
+        .main_btn:hover::before {
+            animation: sun 8s infinite;
         }
         
-        .grid-content {
-            border-radius: 4px;
-            min-height: 36px;
+        .main_btn:hover {
+            animation: sun 8s infinite;
+        }
+        
+        @keyframes sun {
+            100% {
+                background-position: -400% 0;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div id="app">
-        <el-row :gutter="10">
-            <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
-                <div class="grid-content bg-purple"></div>
-            </el-col>
-            <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11">
-                <div class="grid-content bg-purple-light"></div>
-            </el-col>
-            <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11">
-                <div class="grid-content bg-purple"></div>
-            </el-col>
-            <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
-                <div class="grid-content bg-purple-light"></div>
-            </el-col>
-        </el-row>
-    </div>
+    <button type="button" class="main_btn"><span class="haha1">三人参与</span></button>
 </body>
 
 <!--cdn引入ElementUI组件必须先引入Vue-->
