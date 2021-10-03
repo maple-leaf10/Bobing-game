@@ -1,0 +1,146 @@
+.myCanvas {
+    left: 160px;
+    top: 10px;
+    position: absolute;
+}
+.bg_image {
+    height: 594.4px;
+    display: block;
+    border: 1px solid;
+}
+
+.deco_pic1 {
+    position:absolute; 
+    left:240px; 
+    top:110px;
+}
+
+.deco_pic2 {
+    position:absolute; 
+    left:670px; 
+    top:260px;
+}
+.deco_btn1 {
+    position:absolute; 
+    left:660px; 
+    top:397px;
+}
+.deco_btn2 {
+    position:absolute; 
+    left:740px; 
+    top:397px;
+}
+.deco_word1 {
+    position:absolute; 
+    left:745px; 
+    top:195px;
+}
+
+.deco_pic3 {
+    position:absolute; 
+    left:50px; 
+    top:70px;
+}
+.deco_btn3 {
+    position:absolute; 
+    left:30px; 
+    top:20px;
+}
+.deco_btn4 {
+    position:absolute; 
+    left:120px; 
+    top:20px;
+}
+.deco_word2 {
+    position:absolute; 
+    left:70px; 
+    top:170px;
+}
+
+.deco_pic4 {
+    position:absolute; 
+    left:45px; 
+    top:405px;
+}
+.deco_btn5 {
+    position:absolute; 
+    left:40px; 
+    top:540px;
+}
+.deco_btn6 {
+    position:absolute; 
+    left:120px; 
+    top:540px;
+}
+.deco_word3 {
+    position:absolute; 
+    left:70px; 
+    top:340px;
+}
+
+.deco_pic5 {
+    position:absolute; 
+    left:325px; 
+    top:245px;
+}
+.deco_pic6 {
+    position:absolute; 
+    left:425px; 
+    top:185px;
+}
+.deco_pic7 {
+    position:absolute; 
+    left:485px; 
+    top:280px;
+}
+.deco_pic8 {
+    position:absolute; 
+    left:415px; 
+    top:365px;
+}
+.deco_pic9 {
+    position:absolute; 
+    left:405px; 
+    top:275px;
+}
+.deco_pic10 {
+    position:absolute; 
+    left:335px; 
+    top:335px;
+}
+
+.deco_btnall {
+    background-color: white;
+    border: none;
+    color: red;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Lucida Handwriting", cursive;
+    cursor: pointer;
+    position: absolute;
+    left: 689.6px;
+    top: 24.8px;
+    width: 108px;
+    height: 36px;
+    border-radius: 18px;
+    text-align: center;
+    display: block;
+    border-width: 1px;
+    border-color: rgb(107, 106, 106);
+    border-style: solid;
+}
+.deco_btnall:hover {
+    background-color: lightslategray;
+}
+.btn_img {
+    position: absolute;
+    left: 15.6px;
+    top: 5.8px;
+    width: 25px;
+}
+.btn_span {
+    position: absolute;
+    top: 5px;
+    left: 47px;
+}
