@@ -1,0 +1,161 @@
+.myCanvas {
+    left: 160px;
+    top: 10px;
+    position: absolute;
+}
+.bg_image {
+    height: 594.4px;
+    display: block;
+    border: 1px solid;
+}
+
+.deco_pic1 {
+    position: absolute; 
+    left: 700px; 
+    top: 210px;
+}
+.deco_pic2 {
+    position: absolute; 
+    left: 0px; 
+    top: 200px;
+}
+.deco_pic3 {
+    position:absolute; 
+    left:115px; 
+    top:140px;
+}
+.deco_pic4 {
+    position:absolute; 
+    left:420px; 
+    top:145px;
+}
+
+.deco_btn1 {
+    position:absolute; 
+    left:725px; 
+    top:345px;
+}
+.deco_btn2 {
+    position:absolute; 
+    left:725px; 
+    top:385px;
+}
+.deco_word1 {
+    position:absolute; 
+    left:775px; 
+    top:155px;
+}
+
+.deco_btn3 {
+    position:absolute; 
+    left:35px; 
+    top:335px;
+}
+.deco_btn4 {
+    position:absolute; 
+    left:35px; 
+    top:375px;
+}
+.deco_word2 {
+    position:absolute; 
+    left:25px; 
+    top:140px;
+}
+
+.deco_pic5 {
+    position:absolute; 
+    left:170px; 
+    top:240px;
+}
+.deco_pic6 {
+    position:absolute; 
+    left:265px; 
+    top:180px;
+}
+.deco_pic7 {
+    position:absolute; 
+    left:330px; 
+    top:275px;
+}
+.deco_pic8 {
+    position:absolute; 
+    left:260px; 
+    top:360px;
+}
+.deco_pic9 {
+    position:absolute; 
+    left:250px; 
+    top:270px;
+}
+.deco_pic10 {
+    position:absolute; 
+    left:180px; 
+    top:330px;
+}
+
+.deco_pic11 {
+    position:absolute; 
+    left:475px; 
+    top:245px;
+}
+.deco_pic12 {
+    position:absolute; 
+    left:575px; 
+    top:185px;
+}
+.deco_pic13 {
+    position:absolute; 
+    left:635px; 
+    top:280px;
+}
+.deco_pic14 {
+    position:absolute; 
+    left:565px; 
+    top:365px;
+}
+.deco_pic15 {
+    position:absolute; 
+    left:555px; 
+    top:275px;
+}
+.deco_pic16 {
+    position:absolute; 
+    left:485px; 
+    top:335px;
+}
+
+.deco_btnall {
+    background-color: white;
+    border: none;
+    color: red;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Lucida Handwriting", cursive;
+    cursor: pointer;
+    position: absolute;
+    left: 689.6px;
+    top: 24.8px;
+    width: 108px;
+    height: 36px;
+    border-radius: 18px;
+    text-align: center;
+    display: block;
+    border-width: 1px;
+    border-color: rgb(107, 106, 106);
+    border-style: solid;
+}
+.deco_btnall:hover {
+    background-color: lightslategray;
+}
+.btn_img {
+    position: absolute;
+    left: 15.6px;
+    top: 5.8px;
+    width: 25px;
+}
+.btn_span {
+    position: absolute;
+    top: 5px;
+    left: 47px;
+}
