@@ -127,7 +127,7 @@
 }
 
 .main_btn1:hover {
-    background: linear-gradient(90deg, rgb(99, 184, 241), pink, rgb(228, 107, 228), rgb(99, 184, 241));
+    background: linear-gradient(90deg, rgb(99, 184, 241), orangered, pink, rgb(228, 107, 228), rgb(99, 184, 241));
     background-size: 400%;
 }
 
