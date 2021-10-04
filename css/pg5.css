@@ -3,6 +3,7 @@
     top: 10px;
     position: absolute;
 }
+
 .bg_image {
     height: 594.4px;
     display: block;
@@ -10,103 +11,117 @@
 }
 
 .deco_pic1 {
-    position:absolute; 
-    left:240px; 
-    top:110px;
+    position: absolute;
+    left: 240px;
+    top: 110px;
 }
 
 .deco_pic2 {
-    position:absolute; 
-    left:670px; 
-    top:260px;
+    position: absolute;
+    left: 670px;
+    top: 260px;
 }
+
 .deco_btn1 {
-    position:absolute; 
-    left:660px; 
-    top:397px;
+    position: absolute;
+    left: 660px;
+    top: 397px;
 }
+
 .deco_btn2 {
-    position:absolute; 
-    left:740px; 
-    top:397px;
+    position: absolute;
+    left: 740px;
+    top: 397px;
 }
+
 .deco_word1 {
-    position:absolute; 
-    left:745px; 
-    top:195px;
+    position: absolute;
+    left: 745px;
+    top: 195px;
 }
 
 .deco_pic3 {
-    position:absolute; 
-    left:50px; 
-    top:70px;
+    position: absolute;
+    left: 50px;
+    top: 70px;
 }
+
 .deco_btn3 {
-    position:absolute; 
-    left:30px; 
-    top:20px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
 }
+
 .deco_btn4 {
-    position:absolute; 
-    left:120px; 
-    top:20px;
+    position: absolute;
+    left: 120px;
+    top: 20px;
 }
+
 .deco_word2 {
-    position:absolute; 
-    left:70px; 
-    top:170px;
+    position: absolute;
+    left: 70px;
+    top: 170px;
 }
 
 .deco_pic4 {
-    position:absolute; 
-    left:45px; 
-    top:405px;
+    position: absolute;
+    left: 45px;
+    top: 405px;
 }
+
 .deco_btn5 {
-    position:absolute; 
-    left:40px; 
-    top:540px;
+    position: absolute;
+    left: 40px;
+    top: 540px;
 }
+
 .deco_btn6 {
-    position:absolute; 
-    left:120px; 
-    top:540px;
+    position: absolute;
+    left: 120px;
+    top: 540px;
 }
+
 .deco_word3 {
-    position:absolute; 
-    left:70px; 
-    top:340px;
+    position: absolute;
+    left: 70px;
+    top: 340px;
 }
 
 .deco_pic5 {
-    position:absolute; 
-    left:325px; 
-    top:245px;
+    position: absolute;
+    left: 325px;
+    top: 245px;
 }
+
 .deco_pic6 {
-    position:absolute; 
-    left:425px; 
-    top:185px;
+    position: absolute;
+    left: 425px;
+    top: 185px;
 }
+
 .deco_pic7 {
-    position:absolute; 
-    left:485px; 
-    top:280px;
+    position: absolute;
+    left: 485px;
+    top: 280px;
 }
+
 .deco_pic8 {
-    position:absolute; 
-    left:415px; 
-    top:365px;
+    position: absolute;
+    left: 415px;
+    top: 365px;
 }
+
 .deco_pic9 {
-    position:absolute; 
-    left:405px; 
-    top:275px;
+    position: absolute;
+    left: 405px;
+    top: 275px;
 }
+
 .deco_pic10 {
-    position:absolute; 
-    left:335px; 
-    top:335px;
+    position: absolute;
+    left: 335px;
+    top: 335px;
 }
 
 .deco_btnall {
@@ -130,17 +145,56 @@
     border-color: rgb(107, 106, 106);
     border-style: solid;
 }
+
 .deco_btnall:hover {
     background-color: lightslategray;
 }
+
 .btn_img {
     position: absolute;
     left: 15.6px;
     top: 5.8px;
     width: 25px;
 }
+
 .btn_span {
     position: absolute;
     top: 5px;
     left: 47px;
+}
+
+.output_player1 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: 280px;
+    height: 50px;
+    font-family: "方正舒体";
+    font-size: 35px;
+    color: rgba(255, 0, 157, 0.507);
+    top: 101.6px;
+    left: 570.4px;
+}
+
+.output_player2 {
+    top: 42.8px;
+    left: 204px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: 280px;
+    height: 50px;
+    font-family: "方正舒体";
+    font-size: 35px;
+    color: rgba(255, 0, 157, 0.507);
+}
+
+.output_player3 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: 280px;
+    height: 50px;
+    font-family: "方正舒体";
+    font-size: 35px;
+    color: rgba(255, 0, 157, 0.507);
+    top: 510.8px;
+    left: 204px;
 }

@@ -3,7 +3,7 @@ var btn2 = document.getElementById('btn2');
 var btn3 = document.getElementById('btn3');
 var btn4 = document.getElementById('btn');
 btn1.onclick = function() {
-    window.open('pg3.html');
+    window.location.href = 'pg3.html';
 }
 btn2.onclick = function() {
     window.open('pg4.html');
