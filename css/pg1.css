@@ -1,0 +1,56 @@
+.bg_image {
+    height: 594.4px;
+    display: block;
+    border: 1px solid;
+}
+
+.deco_pic {
+    display: block;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+}
+
+.deco_pic1 {
+    display: block;
+    left: 435px;
+    position: absolute;
+    top: 239.5px;
+}
+
+.deco_pic2 {
+    display: block;
+    left: 288.4px;
+    position: absolute;
+    top: 345.6px;
+}
+
+.deco_btn1 {
+    display: block;
+    left: 584.4px;
+    position: absolute;
+    top: 335.2px;
+    width: 150px;
+}
+
+.deco_btn2 {
+    display: block;
+    left: 584.4px;
+    position: absolute;
+    top: 418px;
+    width: 150px;
+}
+
+.deco_btn3 {
+    display: block;
+    left: 584.4px;
+    position: absolute;
+    top: 500.8px;
+    width: 150px;
+}
+
+.myCanvas {
+    left: 160px;
+    position: absolute;
+    top: 10px;
+}
