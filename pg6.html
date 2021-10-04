@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/pg6.css" rel="stylesheet" type="text/css" />
-    <title>博饼网页开心小游戏</title>
+    <title>Bobing-联机模式</title>
 </head>
 
 <body>
@@ -17,27 +17,34 @@
             <img src="pic/player_pic1.gif" alt="haha" height="130px" width="130px">
         </div>
         <div class="deco_word1">
-            <h1><font color="black" size="3">玩家</font></h1>
-         </div>
+            <h1>
+                <font color="black" size="3">玩家</font>
+            </h1>
+        </div>
         <div class="deco_btn1">
-            <input type="button" value="开始" style="color:white; background: rgb(177, 175, 175); width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
+            <input id="start" type="button" value="开始" style="cursor: pointer; color:white; background: rgb(177, 175, 175); width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
         </div>
         <div class="deco_btn2">
-            <input type="button" value="停止" style="color:white; background: red; width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
+            <input id="stop" type="button" value="停止" style="cursor: pointer; color:white; background: red; width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
         </div>
 
         <div class="deco_pic2">
             <img src="pic/player_pic3.gif" alt="haha" height="130px" width="130px">
         </div>
         <div class="deco_word2">
-            <h1><font color="black" size="3">对家</font></h1>
-         </div>
+            <h1>
+                <font color="black" size="3">对家</font>
+            </h1>
+        </div>
         <div class="deco_btn3">
-            <input type="button" value="开始" style="color:white; background: rgb(177, 175, 175); width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
+            <input id="start" type="button" value="开始" style="cursor: pointer; color:white; background: rgb(177, 175, 175); width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
         </div>
         <div class="deco_btn4">
-            <input type="button" value="停止" style="color:white; background: red; width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
+            <input id="stop" type="button" value="停止" style="cursor: pointer; color:white; background: red; width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
         </div>
+
+        <div class="output_player1"></div>
+        <div class="output_player2"></div>
 
         <div class="deco_pic3">
             <img src="pic/bowl_pic.png" alt="haha" height="300px" width="297px">
@@ -45,50 +52,50 @@
         <div class="deco_pic4">
             <img src="pic/bowl_pic.png" alt="haha" height="300px" width="297px">
         </div>
-        
-        <div class="deco_pic5">
-            <img src="pic/dice_pic1.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic6">
-            <img src="pic/dice_pic2.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic7">
-            <img src="pic/dice_pic3.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic8">
-            <img src="pic/dice_pic4.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic9">
-            <img src="pic/dice_pic5.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic10">
-            <img src="pic/dice_pic6.jpg" alt="haha" height="50px" width="50px">
-        </div>
-       
+
         <div class="deco_pic11">
-            <img src="pic/dice_pic1.jpg" alt="haha" height="50px" width="50px">
+            <img id="pic1" src="pic/dice_pic1.jpg" alt="haha" height="50px" width="50px">
         </div>
         <div class="deco_pic12">
-            <img src="pic/dice_pic2.jpg" alt="haha" height="50px" width="50px">
+            <img id="pic2" src="pic/dice_pic2.jpg" alt="haha" height="50px" width="50px">
         </div>
         <div class="deco_pic13">
-            <img src="pic/dice_pic3.jpg" alt="haha" height="50px" width="50px">
+            <img id="pic3" src="pic/dice_pic3.jpg" alt="haha" height="50px" width="50px">
         </div>
         <div class="deco_pic14">
-            <img src="pic/dice_pic4.jpg" alt="haha" height="50px" width="50px">
+            <img id="pic4" src="pic/dice_pic4.jpg" alt="haha" height="50px" width="50px">
         </div>
         <div class="deco_pic15">
-            <img src="pic/dice_pic5.jpg" alt="haha" height="50px" width="50px">
+            <img id="pic5" src="pic/dice_pic5.jpg" alt="haha" height="50px" width="50px">
         </div>
         <div class="deco_pic16">
-            <img src="pic/dice_pic6.jpg" alt="haha" height="50px" width="50px">
+            <img id="pic6" src="pic/dice_pic6.jpg" alt="haha" height="50px" width="50px">
         </div>
 
-        <button class="deco_btnall"><img class="btn_img" src="pic/shoes.png"><span class="btn_span">    Exit</span></button>
+        <div class="deco_pic5">
+            <img id="pic1" src="pic/dice_pic1.jpg" alt="haha" height="50px" width="50px">
+        </div>
+        <div class="deco_pic6">
+            <img id="pic2" src="pic/dice_pic2.jpg" alt="haha" height="50px" width="50px">
+        </div>
+        <div class="deco_pic7">
+            <img id="pic3" src="pic/dice_pic3.jpg" alt="haha" height="50px" width="50px">
+        </div>
+        <div class="deco_pic8">
+            <img id="pic4" src="pic/dice_pic4.jpg" alt="haha" height="50px" width="50px">
+        </div>
+        <div class="deco_pic9">
+            <img id="pic5" src="pic/dice_pic5.jpg" alt="haha" height="50px" width="50px">
+        </div>
+        <div class="deco_pic10">
+            <img id="pic6" src="pic/dice_pic6.jpg" alt="haha" height="50px" width="50px">
+        </div>
+
+        <button class="deco_btnall" id="btn1"><img class="btn_img" src="pic/shoes.png"><span class="btn_span">    Exit</span></button>
     </div>
 </body>
 
-<script>
+<script type="text/javascript" src="js/client.js">
 </script>
 
 </html>

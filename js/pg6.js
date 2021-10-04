@@ -1,16 +1,17 @@
 var btn1 = document.getElementById('btn1');
-var pic1 = document.getElementById('pic1');
-var pic2 = document.getElementById('pic2');
-var pic3 = document.getElementById('pic3');
-var pic4 = document.getElementById('pic4');
-var pic5 = document.getElementById('pic5');
-var pic6 = document.getElementById('pic6');
+var pic1 = document.querySelectorAll('#pic1');
+var pic2 = document.querySelectorAll('#pic2');
+var pic3 = document.querySelectorAll('#pic3');
+var pic4 = document.querySelectorAll('#pic4');
+var pic5 = document.querySelectorAll('#pic5');
+var pic6 = document.querySelectorAll('#pic6');
 var result_player1 = document.querySelector('.output_player1');
 var result_player2 = document.querySelector('.output_player2');
 var result = null;
 btn1.onclick = function() {
     window.location.href = 'pg1.html';
 }
+var j = 0;
 var flag = new Array(2);
 flag[0] = 0;
 flag[1] = 0;
@@ -19,6 +20,7 @@ var flag3 = 0;
 var start = document.querySelectorAll('#start');
 var stop1 = document.querySelectorAll('#stop');
 start[0].onclick = function() {
+    j = 0;
     if (flag[0] == 1) {
         result_player1.innerHTML = "<span></span>";
         flag[0] = 0;
@@ -27,6 +29,7 @@ start[0].onclick = function() {
     flag2 = 1;
 }
 start[1].onclick = function() {
+    j = 1;
     if (flag[1] == 1) {
         result_player2.innerHTML = "<span></span>";
         flag[1] = 0;
@@ -59,14 +62,13 @@ var num;
 num = new Array(6);
 
 function init() {
-    pic1.src = "pic/dice_pic1.jpg";
-    pic2.src = "pic/dice_pic2.jpg";
-    pic3.src = "pic/dice_pic3.jpg";
-    pic4.src = "pic/dice_pic4.jpg";
-    pic5.src = "pic/dice_pic5.jpg";
-    pic6.src = "pic/dice_pic6.jpg";
+    pic1[j].src = "pic/dice_pic1.jpg";
+    pic2[j].src = "pic/dice_pic2.jpg";
+    pic3[j].src = "pic/dice_pic3.jpg";
+    pic4[j].src = "pic/dice_pic4.jpg";
+    pic5[j].src = "pic/dice_pic5.jpg";
+    pic6[j].src = "pic/dice_pic6.jpg";
 }
-
 
 function fun() {
     var arr;
@@ -77,13 +79,14 @@ function fun() {
         arr[i] = Math.floor(Math.random() * 6 + 1);
         num[arr[i] - 1]++;
     }
-    pic1.src = "pic/dice_pic" + arr[0] + ".jpg";
-    pic2.src = "pic/dice_pic" + arr[1] + ".jpg";
-    pic3.src = "pic/dice_pic" + arr[2] + ".jpg";
-    pic4.src = "pic/dice_pic" + arr[3] + ".jpg";
-    pic5.src = "pic/dice_pic" + arr[4] + ".jpg";
-    pic6.src = "pic/dice_pic" + arr[5] + ".jpg";
-    flagtime = setTimeout("fun()", 100);
+    pic1[j].src = "pic/dice_pic" + arr[0] + ".jpg";
+    pic2[j].src = "pic/dice_pic" + arr[1] + ".jpg";
+    pic3[j].src = "pic/dice_pic" + arr[2] + ".jpg";
+    pic4[j].src = "pic/dice_pic" + arr[3] + ".jpg";
+    pic5[j].src = "pic/dice_pic" + arr[4] + ".jpg";
+    pic6[j].src = "pic/dice_pic" + arr[5] + ".jpg";
+    messageOnline(pic1[j].src, pic2[j].src, pic3[j].src, pic4[j].src, pic5[j].src, pic6[j].src);
+    flagtime = setTimeout(fun, 100);
 
 }
 
@@ -123,4 +126,5 @@ function fun2() {
         else
             result = "哎呀，再博一次吧";
     }
+    messageResult(result1);
 }

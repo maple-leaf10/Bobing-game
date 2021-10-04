@@ -159,3 +159,27 @@
     top: 5px;
     left: 47px;
 }
+
+.output_player1 {
+    position: absolute;
+    top: 100.2px;
+    left: 501.2px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 280px;
+    height: 50px;
+    font-family: "方正舒体";
+    font-size: 35px;
+    color: rgba(255, 0, 157, 0.507);
+}
+
+.output_player2 {
+    position: absolute;
+    top: 100.2px;
+    left: 41.2px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 280px;
+    height: 50px;
+    font-family: "方正舒体";
+    font-size: 35px;
+    color: rgba(255, 0, 157, 0.507);
+}

@@ -1,6 +1,6 @@
 var btn1 = document.getElementById('btn1');
 btn1.onclick = function() {
-    window.open('pg1.html');
+    window.location.href = 'pg1.html';
 }
 var btn1 = document.getElementById('btn1');
 var pic1 = document.getElementById('pic1');
@@ -55,7 +55,6 @@ stop1[0].onclick = function() {
     }
     fun2();
     result_player1.innerHTML = "<span>" + result + "</span>";
-    init();
     flag[0] = 1;
     flag2 = 0;
 }
@@ -65,7 +64,6 @@ stop1[1].onclick = function() {
     }
     fun2();
     result_player2.innerHTML = "<span>" + result + "</span>";
-    init();
     flag[1] = 1;
     flag3 = 0;
 }
@@ -75,7 +73,6 @@ stop1[2].onclick = function() {
         }
         fun2();
         result_player3.innerHTML = "<span>" + result + "</span>";
-        init();
         flag[2] = 1;
         flag4 = 0;
     }
