@@ -13,89 +13,106 @@
     <div class="myCanvas">
         <img class="bg_image" src="pic/main_pic2.jpg" alt="haha">
 
+        <div class="deco_word3">
+            <h1 id="msg">Connecting</h1>
+        </div>
+
         <div class="deco_pic1">
-            <img src="pic/player_pic1.gif" alt="haha" height="130px" width="130px">
+            <img src="pic/bowl_pic.png" alt="haha" height="380px" width="377px">
+        </div>
+
+        <div class="deco_pic2">
+            <img src="pic/player_pic1.gif" alt="haha" height="150px" width="150px">
+        </div>
+        <div class="deco_pic9">
+            <img src="pic/player_pic3.gif" alt="haha" height="150px" width="150px">
         </div>
         <div class="deco_word1">
             <h1>
-                <font color="black" size="3">玩家</font>
+                <font color="black" size="3">玩家1</font>
+            </h1>
+        </div>
+        <div class="deco_word2">
+            <h1>
+                <font color="black" size="3">玩家2</font>
             </h1>
         </div>
         <div class="deco_btn1">
             <input id="start" type="button" value="开始" style="cursor: pointer; color:white; background: rgb(177, 175, 175); width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
         </div>
         <div class="deco_btn2">
-            <input id="stop" type="button" value="停止" style="cursor: pointer; color:white; background: red; width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
+            <input id="pause" type="button" value="停止" style="cursor: pointer; color:white; background: red; width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
         </div>
-
-        <div class="deco_pic2">
-            <img src="pic/player_pic3.gif" alt="haha" height="130px" width="130px">
-        </div>
-        <div class="deco_word2">
-            <h1>
-                <font color="black" size="3">对家</font>
-            </h1>
-        </div>
-        <div class="deco_btn3">
-            <input id="start" type="button" value="开始" style="cursor: pointer; color:white; background: rgb(177, 175, 175); width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
-        </div>
-        <div class="deco_btn4">
-            <input id="stop" type="button" value="停止" style="cursor: pointer; color:white; background: red; width: 70px; height: 35px; border-radius: 50px;-webkit-transform: scale(1, 0.9); border:none">
-        </div>
-
         <div class="output_player1"></div>
-        <div class="output_player2"></div>
 
         <div class="deco_pic3">
-            <img src="pic/bowl_pic.png" alt="haha" height="300px" width="297px">
+            <img id="pic1" src="pic/dice_pic1.jpg" alt="haha" height="55px" width="55px">
         </div>
         <div class="deco_pic4">
-            <img src="pic/bowl_pic.png" alt="haha" height="300px" width="297px">
+            <img id="pic2" src="pic/dice_pic2.jpg" alt="haha" height="55px" width="55px">
         </div>
-
-        <div class="deco_pic11">
-            <img id="pic1" src="pic/dice_pic1.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic12">
-            <img id="pic2" src="pic/dice_pic2.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic13">
-            <img id="pic3" src="pic/dice_pic3.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic14">
-            <img id="pic4" src="pic/dice_pic4.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic15">
-            <img id="pic5" src="pic/dice_pic5.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic16">
-            <img id="pic6" src="pic/dice_pic6.jpg" alt="haha" height="50px" width="50px">
-        </div>
-
         <div class="deco_pic5">
-            <img id="pic1" src="pic/dice_pic1.jpg" alt="haha" height="50px" width="50px">
+            <img id="pic3" src="pic/dice_pic3.jpg" alt="haha" height="55px" width="55px">
         </div>
         <div class="deco_pic6">
-            <img id="pic2" src="pic/dice_pic2.jpg" alt="haha" height="50px" width="50px">
+            <img id="pic4" src="pic/dice_pic4.jpg" alt="haha" height="55px" width="55px">
         </div>
         <div class="deco_pic7">
-            <img id="pic3" src="pic/dice_pic3.jpg" alt="haha" height="50px" width="50px">
+            <img id="pic5" src="pic/dice_pic5.jpg" alt="haha" height="55px" width="55px">
         </div>
         <div class="deco_pic8">
-            <img id="pic4" src="pic/dice_pic4.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic9">
-            <img id="pic5" src="pic/dice_pic5.jpg" alt="haha" height="50px" width="50px">
-        </div>
-        <div class="deco_pic10">
-            <img id="pic6" src="pic/dice_pic6.jpg" alt="haha" height="50px" width="50px">
+            <img id="pic6" src="pic/dice_pic6.jpg" alt="haha" height="55px" width="55px">
         </div>
 
         <button class="deco_btnall" id="btn1"><img class="btn_img" src="pic/shoes.png"><span class="btn_span">    Exit</span></button>
     </div>
 </body>
 
-<script type="text/javascript" src="js/client.js">
+<script type="text/javascript" src="js/pg6.js">
+    /*alert('玩家已进入联机页面，即将开始连接');
+
+                        function hideMsg() {
+                            // 将要隐藏的字体直接置为空字符串
+                            document.querySelector('msg').innerHTML = "Succ";
+                        }
+
+                        // 当页面加载出来的时候就开始执行
+                        $(document).ready(function() {
+                            $(function() {
+                                // 当页面页面加载出来两秒之后开始执行setInterval函数
+                                setTimeout(hideMsg, 2000);
+                            });
+                        });*/
 </script>
 
 </html>
+<script type="text/javascript" src="js/pg6.js">
+</script>
+<script type="text/javascript" src="js/server.js">
+</script>
+<script type="text/javascript" src="node_modules/socket.io/client-dist/socket.io.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+    var socket = io();
+
+    var messages = document.getElementById('messages');
+    var btn = document.getElementById('pause');
+    var input = document.getElementById('input');
+    //给submit按钮添加点击事件
+    btn.addEventListener('onclick', function(e) {
+        e.preventDefault();
+        if (result_player1.innerHTML) {
+            socket.emit('chat message', result_player1.innerHTML); //发送消息到服务器
+        }
+        //alert("本次结果为"+result_player1.innerHTML+",可以开始下一场博饼");
+    });
+
+    socket.on('chat message', function(msg) {
+        /*//创建一条元素
+        var item = document.createElement('li'); //在html页面上增加一行消息，无论哪个网页端都可以看到
+        item.textContent = msg;
+        //将元素插入到页面上
+        messages.appendChild(item);*/
+        alert("本次结果为" + result_player1.innerHTML + ",可以开始下一场博饼");
+    });
+</script>
