@@ -1,0 +1,6 @@
+运行方法：
+step1 在终端中输入node server.js
+step2 用live server打开main.html文件开始游戏
+
+备注：
+联机模式可以同时开两个页面进行联机体验
