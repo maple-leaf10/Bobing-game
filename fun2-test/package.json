@@ -1,0 +1,22 @@
+{
+  "name": "fun2-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fun2.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "karma": "^6.3.4",
+    "ws": "^8.2.3"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
