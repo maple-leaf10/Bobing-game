@@ -5,65 +5,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/pg6.css" rel="stylesheet" type="text/css" />
-    <title>Bobing-联机模式</title>
+    <link href="css/dormitory.css" rel="stylesheet" type="text/css" />
+    <title>Bobing-宿舍模式</title>
 </head>
 
 <body>
     <div class="myCanvas">
-        <img class="bg_image" src="pic/main_pic2.jpg" alt="haha">
-
-        <div class="deco_word3">
-            <span id="msg">Connecting......</span>
-        </div>
+        <img class="bg_image" src="pic/main_pic3.jpg" alt="haha">
 
         <div class="deco_pic1">
             <img src="pic/bowl_pic.png" alt="haha" height="380px" width="377px">
         </div>
 
         <div class="deco_pic2">
-            <img src="pic/player_pic1.gif" alt="haha" height="150px" width="150px">
+            <img src="pic/player_pic1.gif" alt="haha" height="130px" width="130px">
         </div>
-        <div class="deco_pic9">
-            <img src="pic/player_pic3.gif" alt="haha" height="150px" width="150px">
-        </div>
+        <button class="btn567 one" id="start" style="left:660px;top:97px;">开始</button>
+        <button class="btn789 two" id="stop" style="left:740px;top:97px;">结束</button>
         <div class="deco_word1">
             <h1>
-                <font color="black" size="3">玩家1</font>
+                <font color="black" size="3">C床</font>
             </h1>
         </div>
-        <div class="deco_word2">
-            <h1>
-                <font color="black" size="3">玩家2</font>
-            </h1>
-        </div>
-        <button class="btn567 one shake" id="start" style="left:320px;top:510px;">开始</button>
-        <button class="btn789 two shake" id="pause" style="left:450px;top:510px;">结束</button>
-        <div class="output_player1"></div>
 
         <div class="deco_pic3">
+            <img src="pic/player_pic2.gif" alt="haha" height="130px" width="130px">
+        </div>
+        <button class="btn567 one" id="start" style="left:30px;top:97px;">开始</button>
+        <button class="btn789 two" id="stop" style="left:120px;top:97px;">结束</button>
+        <div class="deco_word2">
+            <h1>
+                <font color="black" size="3">A床</font>
+            </h1>
+        </div>
+
+        <div class="deco_pic4">
+            <img src="pic/player_pic3.gif" alt="haha" height="130px" width="130px">
+        </div>
+        <button class="btn567 one" id="start" style="left:40px;top:500px;">开始</button>
+        <button class="btn789 two" id="stop" style="left:120px;top:500px;">结束</button>
+        <div class="deco_word3">
+            <h1>
+                <font color="black" size="3">B床</font>
+            </h1>
+        </div>
+
+        <div class="deco_pic11">
+            <img src="pic/player_pic4.gif" alt="haha" height="130px" width="130px">
+        </div>
+        <button class="btn567 one" id="start" style="left:660px;top:500px;">开始</button>
+        <button class="btn789 two" id="stop" style="left:740px;top:500px;">结束</button>
+        <div class="deco_word4">
+            <h1>
+                <font color="black" size="3">D床</font>
+            </h1>
+        </div>
+
+        <div class="deco_pic5">
             <img id="pic1" src="pic/dice_pic1.jpg" alt="haha" height="55px" width="55px">
         </div>
-        <div class="deco_pic4">
+        <div class="deco_pic6">
             <img id="pic2" src="pic/dice_pic2.jpg" alt="haha" height="55px" width="55px">
         </div>
-        <div class="deco_pic5">
+        <div class="deco_pic7">
             <img id="pic3" src="pic/dice_pic3.jpg" alt="haha" height="55px" width="55px">
         </div>
-        <div class="deco_pic6">
+        <div class="deco_pic8">
             <img id="pic4" src="pic/dice_pic4.jpg" alt="haha" height="55px" width="55px">
         </div>
-        <div class="deco_pic7">
+        <div class="deco_pic9">
             <img id="pic5" src="pic/dice_pic5.jpg" alt="haha" height="55px" width="55px">
         </div>
-        <div class="deco_pic8">
+        <div class="deco_pic10">
             <img id="pic6" src="pic/dice_pic6.jpg" alt="haha" height="55px" width="55px">
         </div>
+        <div class="output_player1"></div>
+        <div class="output_player2"></div>
+        <div class="output_player3"></div>
+        <div class="output_player4"></div>
 
         <button class="deco_btnall" id="btn1"><img class="btn_img" src="pic/shoes.png"><span class="btn_span">
                 Exit</span></button>
-        <span id="text"></span>
-        <ul id="haha1"></ul>
 
         <div class="hty_word">
             <h1>
@@ -78,30 +100,7 @@
     </div>
 </body>
 
-<script type="text/javascript" src="js/pg6.js">
-</script>
-<script>
-    var btn = document.querySelector("#pause");
-    var text = document.querySelector("#text");
-    var x = document.querySelector("#haha1");
-    var socket = new WebSocket('ws://localhost:5500')
-        //open:当websocket服务连接成功时触发
-    socket.addEventListener('open', function() {
-            alert("连接服务成功了")
-        })
-        //主动给websocket服务发送信息
-    btn.addEventListener('click', function() {
-            socket.send(outcome)
-        })
-        //接收websocket的服务信息
-    socket.addEventListener('message', function(e) {
-        var x1 = document.createElement('li');
-        x1.innerText = e.data;
-        x.insertBefore(x1, x.children[0]);
-    });
-    socket.addEventListener('close', function(e) {
-        console.log("haha断开连接")
-    });
+<script type="text/javascript" src="js/dormitory.js">
 </script>
 
 </html>

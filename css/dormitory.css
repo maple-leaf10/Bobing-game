@@ -8,99 +8,99 @@
     height: 594.4px;
     display: block;
     border: 1px solid;
+    animation: mymove 10s infinite;
 }
 
 .deco_pic1 {
     position: absolute;
     left: 240px;
     top: 110px;
-    animation: rotate1 5s infinite;
 }
 
 .deco_pic2 {
     position: absolute;
-    left: 50px;
-    top: 70px;
-}
-
-.deco_btn1 {
-    position: absolute;
-    left: 30px;
-    top: 20px;
-}
-
-.deco_btn2 {
-    position: absolute;
-    left: 120px;
-    top: 20px;
+    left: 670px;
+    top: 150px;
 }
 
 .deco_word1 {
     position: absolute;
-    left: 70px;
-    top: 170px;
+    left: 745px;
+    top: 243px;
 }
 
 .deco_pic3 {
     position: absolute;
     left: 50px;
-    top: 405px;
-}
-
-.deco_btn3 {
-    position: absolute;
-    left: 40px;
-    top: 540px;
-}
-
-.deco_btn4 {
-    position: absolute;
-    left: 120px;
-    top: 540px;
+    top: 150px;
 }
 
 .deco_word2 {
     position: absolute;
     left: 70px;
-    top: 340px;
+    top: 235px;
 }
 
 .deco_pic4 {
+    position: absolute;
+    left: 45px;
+    top: 365px;
+}
+
+.deco_word3 {
+    position: absolute;
+    left: 70px;
+    top: 300px;
+}
+
+.deco_pic11 {
+    position: absolute;
+    left: 670px;
+    top: 365px;
+}
+
+.deco_word4 {
+    position: absolute;
+    left: 745px;
+    top: 300px;
+}
+
+.deco_pic5 {
     position: absolute;
     left: 325px;
     top: 245px;
     animation: rotate 3s infinite;
 }
 
-.deco_pic5 {
+.deco_pic6 {
     position: absolute;
     left: 425px;
     top: 185px;
     animation: rotate 3s infinite;
 }
 
-.deco_pic6 {
+.deco_pic7 {
     position: absolute;
     left: 485px;
     top: 280px;
     animation: rotate 3s infinite;
 }
 
-.deco_pic7 {
+.deco_pic8 {
     position: absolute;
     left: 415px;
     top: 365px;
     animation: rotate 3s infinite;
 }
 
-.deco_pic8 {
+.deco_pic9 {
     position: absolute;
     left: 405px;
     top: 275px;
     animation: rotate 3s infinite;
 }
 
-.deco_pic9 {
+.deco_pic10 {
     position: absolute;
     left: 335px;
     top: 335px;
@@ -147,8 +147,20 @@
 }
 
 .output_player1 {
-    top: 70.2px;
-    left: 175.2px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: 280px;
+    height: 50px;
+    font-family: "方正舒体";
+    font-size: 35px;
+    color: rgba(255, 0, 157, 0.507);
+    top: 59.6px;
+    left: 548.4px;
+}
+
+.output_player2 {
+    top: 59.6px;
+    left: 4px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
     width: 280px;
@@ -158,9 +170,7 @@
     color: rgba(255, 0, 157, 0.507);
 }
 
-.output_player2 {
-    top: 481.6px;
-    left: 175.2px;
+.output_player3 {
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
     width: 280px;
@@ -168,6 +178,20 @@
     font-family: "方正舒体";
     font-size: 35px;
     color: rgba(255, 0, 157, 0.507);
+    top: 530.8px;
+    left: 4px;
+}
+
+.output_player4 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: 280px;
+    height: 50px;
+    font-family: "方正舒体";
+    font-size: 35px;
+    color: rgba(255, 0, 157, 0.507);
+    top: 530.8px;
+    left: 548.4px;
 }
 
 .hty_word {
@@ -177,13 +201,44 @@
     background-color: rgba(255, 0, 0, 0.096);
     height: 23px;
     font-family: 仿宋;
-    text-align: center;
 }
 
 .hty_horn {
     position: absolute;
     top: 0px;
     left: 0px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mymove {
+    0% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+    }
+    50% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+    }
+    100% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+    }
 }
 
 .btn567 {
@@ -231,52 +286,4 @@
     box-shadow: 10px 10px 99px 6px rgb(255, 175, 0);
     transition: all ease-in 0.02s;
     border: 0px;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate1 {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    50% {
-        transform: translate(20px, 30px);
-    }
-    100% {
-        transform: translate(0px, 0px);
-    }
-}
-
-@keyframes mymove {
-    0% {
-        height: 594.4px;
-        display: block;
-        border: 1px solid;
-    }
-    50% {
-        height: 594.4px;
-        display: block;
-        border: 1px solid;
-        filter: brightness(50%);
-        -webkit-filter: brightness(50%);
-    }
-    100% {
-        height: 594.4px;
-        display: block;
-        border: 1px solid;
-    }
-}
-
-.bg_image {
-    animation: mymove 10s infinite;
 }

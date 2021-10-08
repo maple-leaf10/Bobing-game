@@ -3,64 +3,114 @@
     top: 10px;
     position: absolute;
 }
+
 .bg_image {
     height: 594.4px;
     display: block;
     border: 1px solid;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(20px, 30px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes mymove {
+    0% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+    }
+    50% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+    }
+    100% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+    }
+}
+
+.bg_image {
+    animation: mymove 10s infinite;
+}
+
 .deco_pic1 {
-    position: absolute; 
-    left: 140px; 
+    position: absolute;
+    left: 140px;
     top: 110px;
+    animation: rotate1 5s infinite;
 }
 
 .deco_pic2 {
-    position: absolute; 
-    left: 650px; 
+    position: absolute;
+    left: 650px;
     top: 240px;
 }
 
 .deco_pic3 {
-    position: absolute; 
-    left: 360px; 
+    position: absolute;
+    left: 360px;
     top: 280px;
-}
-.deco_pic4 {
-    position: absolute; 
-    left: 260px; 
-    top: 190px;
-}
-.deco_pic5 {
-    position: absolute; 
-    left: 350px; 
-    top: 210px;
-}
-.deco_pic6 {
-    position: absolute; 
-    left: 260px; 
-    top: 380px;
-}
-.deco_pic7 {
-    position: absolute; 
-    left: 240px; 
-    top: 280px;
-}
-.deco_pic8 {
-    position: absolute; 
-    left: 370px; 
-    top: 360px;
+    animation: rotate 3s infinite;
 }
 
-.deco_btn1 {
-    position: absolute; 
-    left: 650px; 
-    top: 397px;
+.deco_pic4 {
+    position: absolute;
+    left: 260px;
+    top: 190px;
+    animation: rotate 3s infinite;
 }
-.deco_btn2 {
-    position: absolute; 
-    left: 730px; 
-    top: 397px;
+
+.deco_pic5 {
+    position: absolute;
+    left: 350px;
+    top: 210px;
+    animation: rotate 3s infinite;
+}
+
+.deco_pic6 {
+    position: absolute;
+    left: 260px;
+    top: 380px;
+    animation: rotate 3s infinite;
+}
+
+.deco_pic7 {
+    position: absolute;
+    left: 240px;
+    top: 280px;
+    animation: rotate 3s infinite;
+}
+
+.deco_pic8 {
+    position: absolute;
+    left: 370px;
+    top: 360px;
+    animation: rotate 3s infinite;
 }
 
 .deco_btnall {
@@ -84,15 +134,18 @@
     border-color: rgb(107, 106, 106);
     border-style: solid;
 }
+
 .deco_btnall:hover {
     background-color: lightslategray;
 }
+
 .btn_img {
     position: absolute;
     left: 15.6px;
     top: 5.8px;
     width: 25px;
 }
+
 .btn_span {
     position: absolute;
     top: 5px;
@@ -109,4 +162,71 @@
     font-family: "方正舒体";
     font-size: 35px;
     color: rgba(255, 0, 157, 0.507);
+}
+
+.hty_word {
+    position: absolute;
+    top: -2px;
+    font-size: 6px;
+    background-color: rgba(255, 0, 0, 0.096);
+    height: 23px;
+    font-family: 仿宋;
+    text-align: center;
+}
+
+.hty_horn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.btn567 {
+    cursor: pointer;
+    color: white;
+    background: #50aefc;
+    width: 70px;
+    height: 35px;
+    border-radius: 50px;
+    -webkit-transform: scale(1, 0.9);
+    border: 0px;
+    position: absolute;
+    left: 650px;
+    top: 397px;
+}
+
+.one:hover {
+    background-color: #4cc9f0;
+    -webkit-box-shadow: 10px 10px 99px 10px rgb(135, 222, 248);
+    -moz-box-shadow: 10px 10px 99px 10px rgba(76, 201, 240, 1);
+    box-shadow: 10px 10px 99px 10px rgba(76, 201, 240, 1);
+    transition: all ease-in 0.01s;
+    border: 0px;
+}
+
+.btn789 {
+    cursor: pointer;
+    color: white;
+    background: red;
+    width: 70px;
+    height: 35px;
+    border-radius: 50px;
+    -webkit-transform: scale(1, 0.9);
+    border: 0px;
+    position: absolute;
+    left: 730px;
+    top: 397px;
+}
+
+.btn789:hover {
+    color: white;
+    border: 0;
+}
+
+.two:hover {
+    background-color: rgb(251, 175, 0);
+    -webkit-box-shadow: 10px 10px 99px 6px rgb(251, 175, 0);
+    -moz-box-shadow: 10px 10px 99px 6px rgb(255, 175, 0);
+    box-shadow: 10px 10px 99px 6px rgb(255, 175, 0);
+    transition: all ease-in 0.01s;
+    border: 0px;
 }

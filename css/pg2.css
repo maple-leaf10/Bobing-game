@@ -25,6 +25,75 @@
     top: 373.056px;
 }
 
+.father {
+    height: 46.2px;
+    width: 186.8px;
+    position: absolute;
+}
+
+.father:hover .deco_btn4.main_btn {
+    display: block;
+}
+
+.father:hover .son {
+    display: block;
+}
+
+.deco_btn4 {
+    display: none;
+    float: left;
+    left: 293.7px;
+    position: absolute;
+    top: 523.056px;
+}
+
+.btn_span {
+    position: absolute;
+    top: 4.8px;
+    left: 45.12px;
+}
+
+.son {
+    display: none;
+    float: left;
+    color: white;
+    background: linear-gradient(90deg, rgb(99, 184, 241), pink, rgb(228, 107, 228), rgb(99, 184, 241));
+    border-radius: 50px;
+    border: 1.5px solid;
+    border-color: rgb(187, 100, 238);
+    height: 46.2px;
+    width: 186.8px;
+    font-size: 15px;
+    background-size: 400%;
+}
+
+.son:hover {
+    background: linear-gradient(90deg, orange, hotpink, purple, rgb(119, 119, 221), rgb(99, 184, 241), lightgreen, orange);
+    background-size: 400%;
+}
+
+.son::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+    background: linear-gradient(90deg, white, black);
+    background-size: 400%;
+    border-radius: 20px;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+.son:hover::before {
+    animation: sun 8s infinite;
+}
+
+.son:hover {
+    animation: sun 8s infinite;
+}
+
 .btn_span {
     position: absolute;
     top: 4.8px;
@@ -83,7 +152,7 @@
 }
 
 .main_btn:hover {
-    background: linear-gradient(90deg, rgb(99, 184, 241), pink, rgb(228, 107, 228), rgb(99, 184, 241));
+    background: linear-gradient(90deg, orange, hotpink, purple, rgb(119, 119, 221), rgb(99, 184, 241), lightgreen, orange);
     background-size: 400%;
 }
 
@@ -127,7 +196,7 @@
 }
 
 .main_btn1:hover {
-    background: linear-gradient(90deg, rgb(99, 184, 241), orangered, pink, rgb(228, 107, 228), rgb(99, 184, 241));
+    background: linear-gradient(90deg, orange, hotpink, purple, rgb(119, 119, 221), rgb(99, 184, 241), lightgreen, orange);
     background-size: 400%;
 }
 

@@ -49,6 +49,29 @@
     width: 150px;
 }
 
+.hty_word {
+    position: absolute;
+    top: 0px;
+    font-size: 6px;
+    background-color: rgba(255, 0, 0, 0.096);
+    height: 23px;
+    font-family: 仿宋;
+}
+
+.hty_horn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.deco_word1 {
+    position: absolute;
+    top: 550px;
+    left: 20px;
+    font-size: 5px;
+    font-family: 方正舒体;
+}
+
 .myCanvas {
     left: 160px;
     position: absolute;

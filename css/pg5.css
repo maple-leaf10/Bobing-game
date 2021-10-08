@@ -22,18 +22,6 @@
     top: 260px;
 }
 
-.deco_btn1 {
-    position: absolute;
-    left: 660px;
-    top: 397px;
-}
-
-.deco_btn2 {
-    position: absolute;
-    left: 740px;
-    top: 397px;
-}
-
 .deco_word1 {
     position: absolute;
     left: 745px;
@@ -44,18 +32,6 @@
     position: absolute;
     left: 50px;
     top: 70px;
-}
-
-.deco_btn3 {
-    position: absolute;
-    left: 30px;
-    top: 20px;
-}
-
-.deco_btn4 {
-    position: absolute;
-    left: 120px;
-    top: 20px;
 }
 
 .deco_word2 {
@@ -70,18 +46,6 @@
     top: 405px;
 }
 
-.deco_btn5 {
-    position: absolute;
-    left: 40px;
-    top: 540px;
-}
-
-.deco_btn6 {
-    position: absolute;
-    left: 120px;
-    top: 540px;
-}
-
 .deco_word3 {
     position: absolute;
     left: 70px;
@@ -92,36 +56,42 @@
     position: absolute;
     left: 325px;
     top: 245px;
+    animation: rotate 3s infinite;
 }
 
 .deco_pic6 {
     position: absolute;
     left: 425px;
     top: 185px;
+    animation: rotate 3s infinite;
 }
 
 .deco_pic7 {
     position: absolute;
     left: 485px;
     top: 280px;
+    animation: rotate 3s infinite;
 }
 
 .deco_pic8 {
     position: absolute;
     left: 415px;
     top: 365px;
+    animation: rotate 3s infinite;
 }
 
 .deco_pic9 {
     position: absolute;
     left: 405px;
     top: 275px;
+    animation: rotate 3s infinite;
 }
 
 .deco_pic10 {
     position: absolute;
     left: 335px;
     top: 335px;
+    animation: rotate 3s infinite;
 }
 
 .deco_btnall {
@@ -197,4 +167,114 @@
     color: rgba(255, 0, 157, 0.507);
     top: 510.8px;
     left: 204px;
+}
+
+.hty_word {
+    position: absolute;
+    top: 0px;
+    font-size: 6px;
+    background-color: rgba(255, 0, 0, 0.096);
+    height: 23px;
+    font-family: 仿宋;
+}
+
+.hty_horn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.btn567 {
+    cursor: pointer;
+    color: white;
+    background: #50aefc;
+    width: 70px;
+    height: 35px;
+    border-radius: 50px;
+    -webkit-transform: scale(1, 0.9);
+    border: 0px;
+    position: absolute;
+}
+
+.one:hover {
+    background-color: #4cc9f0;
+    -webkit-box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+    -moz-box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+    box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+    transition: all ease-in 0.02s;
+    border: 0px;
+}
+
+.btn789 {
+    cursor: pointer;
+    color: white;
+    background: red;
+    width: 70px;
+    height: 35px;
+    border-radius: 50px;
+    -webkit-transform: scale(1, 0.9);
+    border: 0px;
+    position: absolute;
+}
+
+.btn789:hover {
+    color: white;
+    border: 0;
+}
+
+.two:hover {
+    background-color: rgb(251, 175, 0);
+    -webkit-box-shadow: 10px 10px 99px 6px rgb(251, 175, 0);
+    -moz-box-shadow: 10px 10px 99px 6px rgb(255, 175, 0);
+    box-shadow: 10px 10px 99px 6px rgb(255, 175, 0);
+    transition: all ease-in 0.02s;
+    border: 0px;
+}
+
+.bg_image {
+    animation: mymove 10s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(20px, 30px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes mymove {
+    0% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+    }
+    50% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+    }
+    100% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+    }
 }

@@ -8,14 +8,15 @@
     height: 594.4px;
     display: block;
     border: 1px solid;
+    animation: mymove 10s infinite;
 }
 
 .deco_word3 {
     position: absolute;
     font-size: 20px;
     font-family: "Lucida Handwriting", cursive;
-    top: 20px;
-    left: 300px;
+    top: 30px;
+    left: 220px;
     color: red;
 }
 
@@ -53,36 +54,42 @@
     position: absolute;
     left: 450px;
     top: 280px;
+    animation: rotate 3s infinite;
 }
 
 .deco_pic4 {
     position: absolute;
     left: 350px;
     top: 190px;
+    animation: rotate 3s infinite;
 }
 
 .deco_pic5 {
     position: absolute;
     left: 440px;
     top: 210px;
+    animation: rotate 3s infinite;
 }
 
 .deco_pic6 {
     position: absolute;
     left: 350px;
     top: 380px;
+    animation: rotate 3s infinite;
 }
 
 .deco_pic7 {
     position: absolute;
     left: 330px;
     top: 280px;
+    animation: rotate 3s infinite;
 }
 
 .deco_pic8 {
     position: absolute;
     left: 460px;
     top: 360px;
+    animation: rotate 3s infinite;
 }
 
 .deco_btn1 {
@@ -138,7 +145,7 @@
 
 .output_player1 {
     position: absolute;
-    top: 180.2px;
+    top: 80.2px;
     left: 541.2px;
     background-color: rgba(0, 0, 0, 0);
     width: 280px;
@@ -146,4 +153,104 @@
     font-family: "方正舒体";
     font-size: 35px;
     color: rgba(255, 0, 157, 0.507);
+}
+
+#haha1 {
+    position: absolute;
+    top: 3px;
+    left: -170.8px;
+}
+
+.btn567 {
+    cursor: pointer;
+    color: white;
+    background: #50aefc;
+    width: 70px;
+    height: 35px;
+    border-radius: 50px;
+    -webkit-transform: scale(1, 0.9);
+    border: 0px;
+    position: absolute;
+}
+
+.one:hover {
+    background-color: #4cc9f0;
+    -webkit-box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+    -moz-box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+    box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+    transition: all ease-in 0.02s;
+    border: 0px;
+}
+
+.btn789 {
+    cursor: pointer;
+    color: white;
+    background: red;
+    width: 70px;
+    height: 35px;
+    border-radius: 50px;
+    -webkit-transform: scale(1, 0.9);
+    border: 0px;
+    position: absolute;
+}
+
+.btn789:hover {
+    color: white;
+    border: 0;
+}
+
+.two:hover {
+    background-color: rgb(251, 175, 0);
+    -webkit-box-shadow: 10px 10px 99px 6px rgb(251, 175, 0);
+    -moz-box-shadow: 10px 10px 99px 6px rgb(255, 175, 0);
+    box-shadow: 10px 10px 99px 6px rgb(255, 175, 0);
+    transition: all ease-in 0.02s;
+    border: 0px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mymove {
+    0% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+    }
+    50% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+    }
+    100% {
+        height: 594.4px;
+        display: block;
+        border: 1px solid;
+    }
+}
+
+.hty_word {
+    position: absolute;
+    top: 0px;
+    font-size: 6px;
+    background-color: rgba(255, 0, 0, 0.096);
+    height: 23px;
+    font-family: 仿宋;
+}
+
+.hty_horn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
