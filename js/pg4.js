@@ -53,6 +53,7 @@ stop1[1].onclick = function() {
     flag3 = 0;
 
 }
+
 var flagtime;
 var oldinner;
 var num;

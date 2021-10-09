@@ -6,6 +6,7 @@ var pic4 = document.getElementById('pic4');
 var pic5 = document.getElementById('pic5');
 var pic6 = document.getElementById('pic6');
 var result_player1 = document.querySelector('.output_player1');
+
 btn1.onclick = function() {
     window.location.href = 'pg1.html';
 }
@@ -16,6 +17,7 @@ function blink() {
     color = color.split(",");
     document.getElementById("msg").style.color = color[parseInt(Math.random() * color.length)];
 }
+
 var flagtime;
 flagtime = setInterval("blink()", 200);
 
@@ -24,9 +26,11 @@ function replace() {
     window.clearTimeout(flagtime);
 }
 setTimeout("replace()", 10000);
+
 var flag = 1;
 var start = document.getElementById('start');
 var pause = document.getElementById('pause');
+
 start.onclick = function() {
     if (flag == 1) {
         result_player1.innerHTML = "<span></span>";
@@ -41,6 +45,7 @@ pause.onclick = function() {
     }
 
 }
+
 var oldinner;
 var num;
 num = new Array(6);
@@ -71,6 +76,7 @@ function fun() {
     pic6.src = "pic/dice_pic" + arr[5] + ".jpg";
     flagtime = setTimeout("fun()", 100);
 }
+
 var outcome;
 
 function fun2() {

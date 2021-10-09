@@ -12,6 +12,7 @@ btn1.onclick = function() {
 var flag = 1;
 var start = document.getElementById('start');
 var pause = document.getElementById('pause');
+
 start.onclick = function() {
     if (flag == 1) {
         result_player1.innerHTML = "<span></span>";
@@ -19,10 +20,11 @@ start.onclick = function() {
         flag = 0;
     }
 }
+
 pause.onclick = function() {
     if (flag == 0) {
         fun2();
-        flag = 1; 
+        flag = 1;
     }
 }
 
@@ -75,7 +77,7 @@ function fun2() {
     else if (num[1] == 6 || num[2] == 6 || num[4] == 6 || num[5] == 6)
         result_player1.innerHTML = "<span>状元-黒六勃</span>";
     else if (num[0] == 5 || num[1] == 5 || num[2] == 5 || num[4] == 5 || num[5] == 5)
-        result_player1.innerHTML = "<span>状元-五子登科</span>";   
+        result_player1.innerHTML = "<span>状元-五子登科</span>";
     else {
         for (var i = 0; i < 6; i++) {
             if (num[i] == 4)

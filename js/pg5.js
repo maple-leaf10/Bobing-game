@@ -2,6 +2,7 @@ var btn1 = document.getElementById('btn1');
 btn1.onclick = function() {
     window.location.href = 'pg1.html';
 }
+
 var btn1 = document.getElementById('btn1');
 var pic1 = document.getElementById('pic1');
 var pic2 = document.getElementById('pic2');
@@ -68,15 +69,15 @@ stop1[1].onclick = function() {
     flag3 = 0;
 }
 stop1[2].onclick = function() {
-        if (flag2 == 1 || flag3 == 1) {
-            alert("请在你所在的玩家位置按停止键，本轮结果不算数");
-        }
-        fun2();
-        result_player3.innerHTML = "<span>" + result + "</span>";
-        flag[2] = 1;
-        flag4 = 0;
+    if (flag2 == 1 || flag3 == 1) {
+        alert("请在你所在的玩家位置按停止键，本轮结果不算数");
     }
-    //碗的逻辑
+    fun2();
+    result_player3.innerHTML = "<span>" + result + "</span>";
+    flag[2] = 1;
+    flag4 = 0;
+}
+
 var flagtime;
 var oldinner;
 var num;
