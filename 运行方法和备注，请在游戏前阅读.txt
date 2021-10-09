@@ -1,6 +1,7 @@
 运行方法：
-step1 在终端中输入node server.js
-step2 用live server打开main.html文件开始游戏
+step1 将整个 main 分支的文件下载
+step2 在终端中输入 node server.js
+step3 用 live server 打开 main.html 文件开始游戏
 
 备注：
 联机模式可以同时开两个页面进行联机体验
